@@ -1,0 +1,150 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* hna ki mchi ldik lpage bchwia trinsition */
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior:smooth;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root{
+    --color1:#01bf2b;
+    --color2:#Eff9FB;
+    --color3:#5a3626;
+    --padding:15px;
+}
+
+.container{
+   height: 100vh;
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+
+}
+
+/* small */
+@media (min-width:768px){
+    .container{
+        width: 970px;
+    }
+}
+/* medium */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+
+}
+/* large */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+/* start project */
+header{
+   margin-left: 10%;
+   width: 100%;
+  
+}
+.content{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+ .content h1{
+  color: #01bf2b;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 70px;
+ }
+ .content ul{
+    display: flex;
+   margin-right: 10px;
+   
+
+   
+  
+  
+
+ }
+
+ ul li{
+    text-transform: capitalize;
+    list-style: none;
+    margin-left: 90px;
+    
+ }
+header button{
+  background-color: #01bf2b;
+  border:none;
+  width: 100px;
+  height: 30px;
+  border-radius: 9px;
+  
+ }
+
+ section .content{
+
+ margin-left: 30px;
+
+   
+    
+ }
+ section .content .text{
+  
+    padding: 40px;
+    max-width: 600px;
+
+ }
+ section .content .text p{
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+
+ }
+ section .content .text h2{
+    font-weight: bold;
+   font-size: 60px;
+    margin-bottom: 20px;
+ }
+
+ .content img{
+   
+    max-width: 500px;
+    margin-right: -300px;
+    transform: rotate(40deg);
+    animation: move 1s infinite alternate ;
+  
+    
+ }
+
+  
+   
+
+
+ .content .text button{
+    background-color: #01bf2b;
+    border:none;
+    width: 100px;
+    height: 30px;
+    border-radius: 9px;
+ }
+@keyframes move{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+   
